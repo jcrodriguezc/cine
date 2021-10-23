@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Este sitio te proporciona la información de tus películas y salas de cine favoritas">
+    <meta name="author" content="Grupo 6">
+    <title>{%block titulo %} {%endblock%}</title>
+    <!-- Awesome -->
+    <script src="https://kit.fontawesome.com/bef37a1d96.js" crossorigin="anonymous"></script>
+     <!--Favicon-->
+     <link rel="apple-touch-icon" sizes="57x57" href="/static/imgs/favicons/apple-icon-57x57.png">
+     <link rel="apple-touch-icon" sizes="60x60" href="/static/imgs/favicons/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="/static/imgs/favicons/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="/static/imgs/favicons/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="/static/imgs/favicons/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="/static/imgs/favicons/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="/static/imgs/favicons/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="/static/imgs/favicons/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="/static/imgs/favicons/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192"  href="/static/imgs/favicons/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/static/imgs/favicons/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="/static/imgs/favicons/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/static/imgs/favicons/favicon-16x16.png">
+     <link rel="manifest" href="/static/img/favicons/manifest.json">
+     <meta name="msapplication-TileColor" content="#ffffff">
+     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+     <meta name="theme-color" content="#ffffff">    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav-main">
+                <img src="../static/imgs/Logo transparente.png" alt="Logo Cinépolis" class="nav-logo">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="/#cartelera" class="btn">Cartelera</a>
+                    </li>
+                    <li>
+                        <a href="/#proximos-estrenos" class="btn">Próximos estrenos</a>
+                    </li>
+                </ul>
+                <ul class="nav-menu-right">
+                    <li>
+                        <a href="/busqueda">
+                            <i class="fas fa-search icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/registro">
+                            <i class="far fa-user icon"></i>
+                        </a>                    
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        {%block contenido%}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="links-footer">
+            <ul>
+                <li>                    
+                    <h2>Cinépolis</h2>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Cartelera</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Próximos estrenos</h3>
+                    </a>
+                </li>                
+                <li>
+                    <a href="#">
+                        <h3>Políticas</h3>
+                    </a>
+                </li>                
+                <li>
+                    <a href="#">
+                        <h3>Sobre Cinépolis</h3>
+                    </a>
+                </li>                                
+            </ul>            
+        </div>
+
+        <div>
+            2021 - Grupo 6
+        </div>        
+    </footer>
+
+    {% block link_css %}{% endblock %}    
+</html>

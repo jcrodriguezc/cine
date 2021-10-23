@@ -1,0 +1,65 @@
+{%extends "template.html"%}
+
+{% block titulo %}busqueda{% endblock %}
+
+{% block contenido %}
+<div class="container-search">
+    <h2 class="tittle1">Buscar película</h2>
+    <input type="search" size="50">
+    <button>Buscar</button>
+</div>
+
+<h2 class="tittle2">Resultados</h2>
+<div class="in-movie">        
+    <div class="movies">
+        <img src="../static/imgs/la_ultima_estafa.jpg" alt="La última estafa">
+        <h3>Titulo de la película</h3>
+        <p>
+            Titulo en inglés: Poner el titulo <br>
+            Estreno: 07-Oct-2021 <br>
+            Género: Acción <br>
+            Recomendada para matores de 12 años <br>
+            90 min
+        </p>
+    </div>
+
+    <div class="movies">
+        <img src="../static/imgs/la_casa_oscura.jpg" alt="La casa oscura">
+        <h3>Titulo de la película</h3>
+        <p>
+            Titulo en inglés: Poner el titulo <br>
+            Estreno: 07-Oct-2021 <br>
+            Género: Acción <br>
+            Recomendada para matores de 12 años <br>
+            90 min
+        </p>
+    </div>
+
+    <div class="movies">
+        <img src="../static/imgs/rock_dmg.jpg" alt="Rock DMG">
+        <h3>Titulo de la película</h3>
+        <p>
+            Titulo en inglés: Poner el titulo <br>
+            Estreno: 07-Oct-2021 <br>
+            Género: Acción <br>
+            Recomendada para matores de 12 años <br>
+            90 min
+        </p>
+    </div>
+
+    <div class="movies">
+        <img src="../static/imgs/shang_chi.jpg" alt="Shang-Chi">
+        <h3>Titulo de la película</h3>
+        <p>
+            Titulo en inglés: Poner el titulo <br>
+            Estreno: 07-Oct-2021 <br>
+            Género: Acción <br>
+            Recomendada para matores de 12 años <br>
+            90 min
+        </p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block link_css %} <link rel="stylesheet" href="../static/css/busqueda.css"> {% endblock %}

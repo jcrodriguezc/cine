@@ -1,0 +1,155 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* botones menu*/
+.btn{
+    color: #262626;
+    cursor:pointer;
+    display: inline-block;
+    border: 0;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: white;      
+}
+
+/* Efecto del boton al pasar el mouse */
+.btn:hover{
+    opacity: .9;
+}
+
+/* Botones */
+button{
+    background-color: #002069;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    width: 120px;
+}
+/* Efecto del boton al pasar el mouse */
+button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+/* *************************header**************************** */
+
+/* Iconos menú derecho */
+.icon{
+    color: white;
+    font-size: 26px;
+}
+/* Efecto de los íconos del menú */
+.icon:hover{
+    opacity: .9;
+}
+
+.container{
+    background-color: #002069;
+    color: white;
+    width: 100%;
+}
+
+ul{
+    list-style: none;    
+}
+
+/* Navegación */
+.nav-main{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 20px 0;
+}
+
+.nav-logo{
+    width: 150px;
+}
+
+/* Poner los elementos del menú uno al lado del otro */
+.nav-main ul{
+    display: flex;    
+}
+
+/* Dar espacio entre los elementos del menu */
+.nav-main ul li{
+    padding: 20px;
+    
+}
+
+.nav-main ul.nav-menu{
+    flex:1;
+    margin-left: 20px
+}
+
+/* *******************************Busqueda****************************** */
+.tittle1{
+    display: inline;    
+}
+
+.tittle2{
+    color: #002069;
+    margin-left: 20px;
+}
+
+.container-search{        
+    color: #002069;
+    display: inline-block;    
+    padding: 30px 20px;
+}
+
+.in-movie{
+    width: 90%;       
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;    
+}
+
+/* efecto de las películas */
+.movies:hover{
+    opacity: .9;
+}
+
+/* *********************************************Footer******************************** */
+footer{
+    background-color: #002069;
+    color: white;    
+    text-align: center; 
+    padding-bottom: 10px;
+    margin-top: 30px;        
+}
+
+/* Poner los elementos del menú uno al lado del otro */
+.links-footer ul{    
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;      
+    height: 50px;    
+}
+
+/* Cambiar color de la fuente */
+.links-footer ul li a h3{
+    color: white;        
+}
+
+/* Efecto de los links */
+.links-footer ul li a h3:hover{
+    opacity: .9;    
+}
+
+a{
+    text-decoration: none;
+}

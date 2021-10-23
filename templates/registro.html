@@ -1,0 +1,60 @@
+{% extends "template.html" %}
+
+{% block titulo %}Registro-Ingreso{% endblock %}
+
+{%block contenido %}
+<h1 class="tittle-account">Mi cuenta</h1>
+
+<div class="container-buttons">
+    <button class="button">Datos</button>            
+    <button class="button">Comentarios</button>
+    <Button class="button">Cerrar</Button>            
+</div>
+
+
+<div class= "container-account">            
+    <!-- Registro -->
+    <div class="container-forms">
+        <h2>Registro</h2>
+        <form action="" method="post" id="form">
+            <div class "form-input">
+                <label for="name">Nombre completo</label> <br>
+                <input type="text" name="" id="name" size="50" required>
+            </div>
+
+            <div class="form-input">
+                <label for="email">Correo electrónico</label> <br>
+                <input type="email" name="" id="emal" size="50" required>
+            </div>
+
+            <div class="form-input">
+                <label for="password">Contraseña</label> <br>
+                <input type="password" name="" id="password" size="50" required>
+            </div>
+
+            <p class="text-register">Tus datos personales se utilizan para procesar tu pedido, mejorar tu experiencia en esta web, gestionar el acceso a tu cuenta y otros propósitos descritos en nuestra política de privacidad </p>
+            <button type="submit" class="submit">Registrarme</button>
+        </form>
+    </div>
+
+    <!-- Login -->
+    <div class="container-forms">
+        <h2>Ingresar</h2>
+        <form action="" method="post" id="form">
+            <div class="form-input">
+                <label for="email">Correo electrónico</label> <br>
+                <input type="email" name="" id="emal" size="50" required>
+            </div>
+
+            <div class="form-input">
+                <label for="password">Contraseña</label> <br>
+                <input type="password" name="" id="password" size="50" required>
+            </div>
+            <button type="submit">Ingresar</button>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
+
+{%block link_css%} <link rel="stylesheet" href="../static/css/registro.css"> {% endblock %}
