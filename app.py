@@ -1,4 +1,5 @@
 from flask import Flask, render_template as render
+from db import get_db
 
 app = Flask(__name__)
 
@@ -22,9 +23,17 @@ def busqueda():
 def pelicula():
     return render ("pelicula.html")
 
-@app.route("/template", methods= ["GET"])
-def template():
-    return render ("template.html")
+# @app.route("/usuario/<id_usuario>", methods= ["GET","POST"])
+# def usuario(id_usuario):
+    
+#     if id_usuario in lista_usuarios:{
+#         return render ("usuario.html")
+#     else:
+#         return f"Error: El usuario no existe"
+#     }
+
+
+
 
 if __name__=="__main__":
     app.run(debug=True)
