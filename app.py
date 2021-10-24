@@ -3,6 +3,8 @@ from db import get_db
 
 app = Flask(__name__)
 
+tipoUsuarios = ["usuario","administrador","superadministrador"]
+
 @app.route("/", methods= ["GET"])
 def inicio():
     return render ("index.html")
@@ -23,17 +25,16 @@ def busqueda():
 def pelicula():
     return render ("pelicula.html")
 
-# @app.route("/usuario/<id_usuario>", methods= ["GET","POST"])
-# def usuario(id_usuario):
+@app.route("/usuario/<tipoUsuario>", methods= ["GET","POST"])
+def tipoUsuario(tipoUsuario):
     
-#     if id_usuario in lista_usuarios:{
-#         return render ("usuario.html")
-#     else:
-#         return f"Error: El usuario no existe"
-#     }
-
-
-
+    if tipoUsuario in tipoUsuarios:
+        if tipoUsuario == "usuario":
+            return render ("usuario.html")        
+        else:
+            return render ("dashboard.html")
+    else:
+        return f"Error: El usuario no existe"
 
 if __name__=="__main__":
     app.run(debug=True)
