@@ -1,0 +1,43 @@
+{% extends "template.html" %}
+
+{% block titulo %}Película{% endblock %}
+
+{% block contenido %}
+            <!-- Imagen y video -->
+            <div>
+                <div class= "media-dashboard">
+                    <img src="../static/imgs/shang_chi.jpg" alt="" class="image1"> 
+                    <img src="../static/imgs/Video Shang-chi.jpg" alt="" class="image2">            
+                </div>        
+            </div>
+      
+            <div class="text">
+                <div class="text1">
+                  <h3>Shang-Chi y la leyenda de los diez anillos</h3>
+                  <p>SHANG-CHI Y LEYENDA DE LOS DIEZ ANILLOS de Marvel Studios está protagonizada por Simu Liu como Shang-Chi, quien se ve envuelto en la red de la misteriosa organización de los Diez anillos.            
+                  </p>
+                  <p>Nombre: Shang-Chi y la leyenda de los diez anillos</p>
+                  <p>Genero: Acción y aventura</p>
+                  <p>Clasificación: 12 años</p>
+                  <p>Tipo: 2D - 3D</p>
+                  <p>Cartelera: Si</p>
+                  <p>Funciones: 18:45    21:40</p>            
+                  
+                </div>
+                <div class="text1">
+                  <h3>Funciones</h3>
+                  <input type="date">
+                      <div class="button">
+                          <button>18:45</button>
+                      </div>              
+                      <div class="button">
+                          <button>21:40</button>
+                      </div>
+                      <div class="button get">
+                          <button>COMPRAR ENTRADAS</button>
+                      </div>
+                </div>
+            </div>
+{% endblock %}
+
+{% block link_css %} <link rel="stylesheet" href="../static/css/pelicula.css"> {% endblock %}

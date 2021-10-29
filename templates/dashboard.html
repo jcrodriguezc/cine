@@ -1,0 +1,76 @@
+{% extends "template.html" %}
+
+{%block titulo%}dashboard{%endblock%}
+
+{%block contenido%}
+<div class="container-general">
+    <div class="container-menus">
+        <div class="menu-dashboard">
+            <button>Salas</button>
+            <button>Películas</button>
+            <button>Funciones</button>
+            <button>Usuarios</button>
+            <button>Comentarios</button>
+        </div>               
+    </div>       
+
+    <div class="container-menus">
+        <div class="menu-dashboard">
+             <button>Nueva</button>
+             <button>Editar</button>
+             <button>Eliminar</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-general">
+    <h3 class="text-dashboard">Películas</h3>
+    <h3 class="text-dashboard">Shang-Chi</h3>
+</div>
+
+<div class="container-general">
+ <div class="container-menus items">
+     <div>
+         <ul>
+             <li>Escape room 2: Reto mortal</li>
+             <li>La leyenda de la viuda</li>
+             <li>Los santos de la mafia</li>
+             <li>Maligno</li>
+             <li>Memoria</li>
+             <li>Paw Patrol: La película</li>
+             <li>Shang-Chi y la leyenda de los diez anillos</li>
+             <li>Boonie bears: La vida salvaje</li>
+             <li>Sin tiempo para morir</li>
+             <li>La casa oscura</li>
+             <li>Rock DMG</li>
+             <li>Petter Rabbit</li>
+             <li>El charlatan</li>
+             <li>Shirley</li>
+             <li>Space Jam: Una nueva era</li>
+             <li>Rápidos y Furiosos</li>
+             <li>El padre</li>
+             <li>Los locos Adams 2</li>
+         </ul>
+     </div>               
+ </div>        
+
+ <div class="container-menus">
+     <div class="info-menus">
+         <div container-media>
+             <img src="../static/imgs/shang_chi.jpg" alt="" class="image-item">
+             <iframe width="400" height="250" src="https://www.youtube.com/embed/BD77EOU8N3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         </div>
+             <p>SHANG-CHI Y LEYENDA DE LOS DIEZ ANILLOS de Marvel Studios está protagonizada por Simu Liu como Shang-Chi, quien se ve envuelto en la red de la misteriosa organización de los Diez anillos.            
+             </p>
+             <p>Nombre: Shang-Chi y la leyenda de los diez anillos</p>
+             <p>Genero: Acción y aventura</p>
+             <p>Clasificación: 12 años</p>
+             <p>Tipo: 2D - 3D</p>
+             <p>Cartelera: Si</p>
+             <p>Funciones: 18:45    21:40</p>
+         </div>
+ </div>
+</div>
+{% endblock%}
+
+{% block link_css %}<link rel="stylesheet" href="../static/css/dashboard.css"> {% endblock %}
